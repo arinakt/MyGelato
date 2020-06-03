@@ -38,7 +38,7 @@ class BascetViewController: UIViewController {
         if textField == nameTF {
             telephoneNumberTF.becomeFirstResponder()
         } else if textField == telephoneNumberTF {
-            adressTF.resignFirstResponder()
+            adressTF.becomeFirstResponder()
         } else if textField == adressTF {
             textField.resignFirstResponder()
         }
