@@ -8,6 +8,9 @@
 
 import UIKit
 
+var bascetArray = [Gelato]()
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
