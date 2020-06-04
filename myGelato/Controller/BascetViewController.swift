@@ -93,6 +93,14 @@ extension BascetViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 82
     }
+    
+   /* func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            let gelatoDelete = bascetArray[indexPath.row]
+            bascetArray.remove(at: indexPath)
+        }
+    } */
 }
 
 // MARK: - UITextFieldDelegate
