@@ -34,10 +34,11 @@ class CollectionViewController: UICollectionViewController {
         cookies.type = "Джелато"
         cookies.description = "Джелато с кусочками печенья, сочетание любимых вкусов понравится и детям и взрослым."
         
-        var yogurtCherry = Gelato()
+/*        var yogurtCherry = Gelato()
         yogurtCherry.name = "Йогурт вишня"
         yogurtCherry.type = "Джелато"
         yogurtCherry.description = "Необыкновенное сочетание натурального йогурта с кислинкой и сладости вариегато вишня Амарена воплотились в вкуснейшем джелато йогурт вишня."
+ */
         
         var eskimo = Gelato()
         eskimo.name = "Эскимо"
@@ -70,10 +71,11 @@ class CollectionViewController: UICollectionViewController {
         black.description = "Трендовый брутальный цвет нашему фирменному пломбиру с нотками миндаля придает пищевой уголь. Удивите друзей и близких!"
         
         
-        var milkChocolate = Gelato()
+ /*       var milkChocolate = Gelato()
         milkChocolate.name = "Молочный шоколад"
         milkChocolate.type = "Джелато"
         milkChocolate.description = "Итальянское мороженое - джелато для любителей шоколада. Отличается от других шоколадных вкусов созвучием ароматных ноток какао и сливок. Нежное и сладкое, как наши воспоминания о детстве и самых счастливых моментах жизни."
+ */
         
         var blueMatcha = Gelato()
         blueMatcha.name = "Голубая матча"
@@ -110,17 +112,18 @@ class CollectionViewController: UICollectionViewController {
         caramelCookies.name = "Печенье-карамель"
         caramelCookies.type = "Джелато"
         caramelCookies.description = "Итальянское мороженое - джелато с добавлением хрустящего печенья и карамели."
-        
+ 
+/*
         var sicilianPistachio = Gelato()
         sicilianPistachio.name = "Сицилийская фисташка"
         sicilianPistachio.type = "Джелато"
         sicilianPistachio.description = "Итальянское мороженое - джелато, для приготовления которого мы используем только настоящую сицилийскую фисташку со склонов вулкана Этна."
-                
+ */
 
-        return [gorgonsal, sugarFreeStrawberries, venice, cookies, yogurtCherry,
-                eskimo, mint, watermelon, melon, kiwi, black, milkChocolate,
+        return [gorgonsal, sugarFreeStrawberries, venice, cookies,
+                eskimo, mint, watermelon, melon, kiwi, black,
                 blueMatcha, raspberry, gingerMango, strawberryBasil, nuts,
-                figMascarpone, caramelCookies, sicilianPistachio]
+                figMascarpone, caramelCookies,]
         
     }()
     
