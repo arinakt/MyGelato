@@ -11,6 +11,7 @@ import UIKit
 class BascetViewController: UIViewController {
     
     let identifier = "cell"
+
     
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var telephoneNumberTF: UITextField!
@@ -22,7 +23,13 @@ class BascetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        sumLabel.text = "Сумма: \(String(Order.sharedInstance.sum))₽"
+        //sumLabel.text = "Сумма: \(String(Order.sharedInstance.sum))₽"
+        
+        var totalSum: Int = 0
+        for price in bascetArray {
+            totalSum += price.price ?? 0
+        }
+        sumLabel.text = "Сумма: \(totalSum)₽"
         
         NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: nil) { (nc) in
             self.view.frame.origin.y = -300
@@ -32,6 +39,7 @@ class BascetViewController: UIViewController {
             self.view.frame.origin.y = 0
         }
     }
+    
     
         //TextField methods
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -93,14 +101,29 @@ extension BascetViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 82
     }
+    // MARK: DELETE
     
-   /* func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let gelatoDelete = bascetArray[indexPath.row]
-            bascetArray.remove(at: indexPath)
+            bascetArray.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            var totalSum: Int = 0
+            for price in bascetArray {
+                totalSum += price.price ?? 0
+            }
+            sumLabel.text = "Сумма: \(totalSum)₽"
         }
-    } */
+    }
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
 }
 
 // MARK: - UITextFieldDelegate

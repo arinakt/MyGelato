@@ -15,17 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="Rjh-F2-Ow9">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="s" translatesAutoresizingMaskIntoConstraints="NO" id="kFL-Cd-NFY">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Rjh-F2-Ow9" secondAttribute="bottom" id="0sg-Hi-twS"/>
-                            <constraint firstItem="Rjh-F2-Ow9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="H4l-s2-m9z"/>
-                            <constraint firstItem="Rjh-F2-Ow9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="b7l-LV-Vgf"/>
-                            <constraint firstItem="Rjh-F2-Ow9" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="kL7-xe-yAi"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -35,6 +30,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2" width="645" height="960"/>
+        <image name="s" width="800" height="600"/>
     </resources>
 </document>
