@@ -375,12 +375,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="RvV-mW-GYY"/>
+        <segue reference="1na-ev-HYC"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="632" height="960"/>
         <image name="cart" catalog="system" width="128" height="102"/>
-        <image name="Арбуз" width="741" height="732"/>
-        <image name="Горгонзала" width="736" height="744"/>
+        <image name="Арбуз" width="370.5" height="366"/>
+        <image name="Горгонзала" width="368" height="372"/>
     </resources>
 </document>

@@ -14,9 +14,8 @@
 		84AED2952481433500034E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AED2932481433500034E0B /* LaunchScreen.storyboard */; };
 		84D596F9248144560074E000 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D596F8248144560074E000 /* CollectionViewController.swift */; };
 		84D596FB24814B540074E000 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D596FA24814B540074E000 /* CollectionViewCell.swift */; };
-		84D596FD24814BB20074E000 /* GelatoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D596FC24814BB20074E000 /* GelatoModel.swift */; };
+		84D596FD24814BB20074E000 /* Gelato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D596FC24814BB20074E000 /* Gelato.swift */; };
 		84D596FF24816CA20074E000 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D596FE24816CA20074E000 /* DetailViewController.swift */; };
-		84D597052483F07C0074E000 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D597042483F07C0074E000 /* MainViewController.swift */; };
 		84D597072483FD090074E000 /* BascetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D597062483FD090074E000 /* BascetViewController.swift */; };
 		84D5970B2483FEF70074E000 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5970A2483FEF70074E000 /* Order.swift */; };
 		84D59733248426860074E000 /* BascetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D59732248426860074E000 /* BascetTableViewCell.swift */; };
@@ -32,9 +31,8 @@
 		84AED2962481433500034E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D596F8248144560074E000 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		84D596FA24814B540074E000 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		84D596FC24814BB20074E000 /* GelatoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GelatoModel.swift; sourceTree = "<group>"; };
+		84D596FC24814BB20074E000 /* Gelato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gelato.swift; sourceTree = "<group>"; };
 		84D596FE24816CA20074E000 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
-		84D597042483F07C0074E000 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		84D597062483FD090074E000 /* BascetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BascetViewController.swift; sourceTree = "<group>"; };
 		84D5970A2483FEF70074E000 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		84D59732248426860074E000 /* BascetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BascetTableViewCell.swift; sourceTree = "<group>"; };
@@ -87,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				84D5970A2483FEF70074E000 /* Order.swift */,
-				84D596FC24814BB20074E000 /* GelatoModel.swift */,
+				84D596FC24814BB20074E000 /* Gelato.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,10 +102,9 @@
 		84F22AA7248697CB005CF10C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				84D597042483F07C0074E000 /* MainViewController.swift */,
 				84D596F8248144560074E000 /* CollectionViewController.swift */,
-				84D596FE24816CA20074E000 /* DetailViewController.swift */,
 				84D597062483FD090074E000 /* BascetViewController.swift */,
+				84D596FE24816CA20074E000 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,7 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D596FD24814BB20074E000 /* GelatoModel.swift in Sources */,
+				84D596FD24814BB20074E000 /* Gelato.swift in Sources */,
 				84D596F9248144560074E000 /* CollectionViewController.swift in Sources */,
 				84AED2892481432D00034E0B /* AppDelegate.swift in Sources */,
 				84D59733248426860074E000 /* BascetTableViewCell.swift in Sources */,
@@ -191,7 +188,6 @@
 				84D596FB24814B540074E000 /* CollectionViewCell.swift in Sources */,
 				84AED28B2481432D00034E0B /* SceneDelegate.swift in Sources */,
 				84D5970B2483FEF70074E000 /* Order.swift in Sources */,
-				84D597052483F07C0074E000 /* MainViewController.swift in Sources */,
 				84D597072483FD090074E000 /* BascetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
